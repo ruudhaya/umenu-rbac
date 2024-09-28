@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import './Menu.css';
 
-const Menu = ({ data }) => {
+const Menu = ({ data, orientation }) => {
     // create an array object copy from data props
 
 
@@ -14,7 +14,7 @@ const Menu = ({ data }) => {
   // Create a sample data for hierarchy of roles and permissions for 3 menu items with submenus and pages within it
   
   return (
-    <div>
+    <div className={`menu-container ${orientation}`}>
       {Array.isArray(data) && data.map((menu, index) => (
         <ul key={index}>
           <li>

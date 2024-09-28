@@ -5,7 +5,7 @@ function App() {
   console.log(simpledata);
   return (
     <div>
-      <Menu data={simpledata} />
+      <Menu data={simpledata} orientation="horizontal" />
     </div>
   );
 }

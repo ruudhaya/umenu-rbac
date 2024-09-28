@@ -39,3 +39,34 @@ ul {
   .expanded {
     display: block;
   }
+
+  .menu-container.horizontal {
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: flex;
+    flex-direction: row;
+    background-color: #007bff;
+  }
+  
+  .menu-container.horizontal ul {
+    display: flex;
+    flex-direction: row;
+  }
+  
+  .menu-container.horizontal ul ul {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #007bff;
+  }
+  
+  .menu-container.horizontal ul li {
+    margin: 0;
+    position: relative;
+  }
+  
+  .menu-container.horizontal ul li:hover ul {
+    display: block;
+  }
