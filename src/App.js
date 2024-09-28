@@ -1,11 +1,13 @@
 import Menu from './components/Menu';
+import { BrowserRouter } from 'react-router-dom'
 import simpledata from './sampledata/menusample';
 
 function App() {
-  console.log(simpledata);
   return (
     <div>
-      <Menu data={simpledata} orientation="horizontal" />
+      <BrowserRouter>
+        <Menu data={simpledata} orientation="horizontal" />
+      </BrowserRouter>
     </div>
   );
 }
